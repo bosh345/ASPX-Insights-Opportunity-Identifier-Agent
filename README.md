@@ -1,7 +1,9 @@
 # ASPX-Insights-Opportunity-Identifier-Agent
 Built for sellers who need to land value, expand usage, and drive secure AI adoption at scale.
 Copilot Opportunity Agent
-![ASPX Insights](images/aspx.png)
+
+<img src="images/aspx.png" width="700">
+
 AI-driven sales productivity focused on turning fragmented signals into clear, actionable next steps for sellers.
 Overview
 Most sellers are not constrained by opportunity, they are constrained by time and signal.
