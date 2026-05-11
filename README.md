@@ -11,6 +11,7 @@ With a significant portion of effort spent on administrative work and manual int
 This shifts sales from reactive account management to proactive, insight-led execution at scale.
 
 What this solves
+
 <img src="images/Architecture.png" width="700">
 
 Fragmented data across dashboards, CRM, and telemetry
@@ -53,25 +54,25 @@ Prioritised account list, recommended actions, customer engagement prompts
 Adoption propensity model
 Each account is scored against four key signals to determine the next best action:
 1. Copilot Upsell — Expanding healthy adoption
-<img src="images/graph1.png" width="700">
+<img src="images/Graph1.png" width="700">
 Strong active usage
 Available licensed capacity
 Clear expansion opportunity
 
 2. Convert unlicensed to paid — Monetising demand
-<img src="images/graph2.png" width="700">
+<img src="images/Graph2.png" width="700">
 High free Copilot usage
 Low paid conversion
 Proven demand with monetisation opportunity
 
 3. Unhealthy adoption — Protecting revenue
-<img src="images/graph3.png" width="700">
+<img src="images/Graph3.png" width="700">
 Paid investment not translating to usage
 Low engagement patterns
 Requires enablement and intervention
 
 4. Agent 365 readiness — Expanding beyond productivity
-<img src="images/graph4.png" width="700">
+<img src="images/Graph4.png" width="700">
 High Copilot maturity
 Active agent usage
 Ready for workflow automation scenarios
