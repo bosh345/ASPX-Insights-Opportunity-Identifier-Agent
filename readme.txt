@@ -1,0 +1,140 @@
+## Install into a Copilot Studio development environment
+
+Use this process to import the packaged agent into a Power Platform development environment and open it in Copilot Studio.
+
+### Prerequisites
+
+Before you start, confirm you have:
+
+- A Microsoft Power Platform **development environment** with Dataverse enabled.
+- Permission to import solutions into that environment, such as System Administrator, System Customizer, Environment Maker, or an equivalent custom role.
+- Access to **Copilot Studio** in the same tenant and environment.
+- Any required environment, data loss prevention, connector, and generative AI policies approved for your organisation.
+- The solution package from this repository: `OpportunityAgent_1_0_0_1.zip`.
+
+### 1. Download the solution package
+
+Download the repository or clone it locally:
+
+```powershell
+git clone https://github.com/bosh345/ASPX-Insights-Opportunity-Identifier-Agent.git
+cd ASPX-Insights-Opportunity-Identifier-Agent
+```
+
+The agent solution package is in the repository root:
+
+```text
+OpportunityAgent_1_0_0_1.zip
+```
+
+### 2. Select the target development environment
+
+1. Go to [Power Apps](https://make.powerapps.com/).
+2. Use the environment picker in the top right to select your development environment.
+3. Confirm the selected environment is the same environment you plan to use in Copilot Studio.
+
+### 3. Import the solution
+
+1. In Power Apps, select **Solutions**.
+2. Select **Import solution**.
+3. Upload `OpportunityAgent_1_0_0_1.zip`.
+4. Review the import details. The solution unique name is `OpportunityAgent`.
+5. Select **Import**.
+6. Wait for the import to finish successfully.
+
+This package is an unmanaged development solution, so it can be inspected and updated after import.
+
+### 4. Open the agent in Copilot Studio
+
+1. Go to [Copilot Studio](https://copilotstudio.microsoft.com/).
+2. Select the same development environment used for the solution import.
+3. Open **Agents**.
+4. Locate and open the imported Opportunity Agent.
+5. Review the agent instructions, topics, knowledge sources, and any imported files before testing.
+
+### 5. Review configuration after import
+
+After importing, validate the agent configuration for your dev tenant:
+
+- **Knowledge and files:** confirm imported knowledge files are present and appropriate for your environment.
+- **Topics:** review system and custom topics, including greeting, fallback, search, escalation, and end-of-conversation flows.
+- **Authentication:** configure sign-in settings if your dev scenario requires authenticated users.
+- **Connections and actions:** update any connectors, actions, or environment-specific references required by your tenant.
+- **Security:** ensure only the intended makers and testers have access to the agent in the dev environment.
+
+### 6. Test the agent
+
+Use the Copilot Studio test pane to validate common seller scenarios, such as:
+
+- Identifying Copilot upsell opportunities.
+- Converting unlicensed usage to paid adoption.
+- Detecting unhealthy adoption.
+- Assessing Agent 365 readiness.
+- Asking for recommended next actions for a seller portfolio.
+
+If responses do not match your expected dev data or policy settings, update the agent topics, instructions, knowledge, or actions before publishing.
+
+### 7. Publish for development testing
+
+When the agent behaves as expected:
+
+1. Select **Publish** in Copilot Studio.
+2. Use a limited dev/test audience first.
+3. Validate end-to-end behaviour in the intended channel before moving toward test or production environments.
+
+## Internal adoption model
+
+To successfully deploy and scale:
+
+| Phase | Focus |
+| --- | --- |
+| Pilot | Start with a small group of sellers and measure outcomes such as time saved and improved prioritisation. |
+| Refine | Improve signal quality, recommendation accuracy, and seller trust in the outputs. |
+| Scale | Roll out across teams with structured enablement and behaviour-change support. |
+| Integrate | Embed insights into CRM and existing tools so recommendations appear in the flow of work. |
+| Measure | Track productivity gains, pipeline velocity, conversion improvement, and revenue impact. |
+
+## Key value proposition
+
+- Moves selling from manual to intelligent.
+- Replaces static pipeline views with real-time insight.
+- Drives precision engagement across large portfolios.
+- Enables consistent execution at scale.
+
+## Ideal use cases
+
+- Large sales portfolios with fragmented signals.
+- Copilot growth and expansion scenarios.
+- Identifying upsell and monetisation opportunities.
+- Driving adoption and protecting existing revenue.
+- Scaling agent-led sales motions.
+
+## What good looks like
+
+- Sellers know exactly where to focus.
+- Every account has a clear next action.
+- AI-driven prioritisation replaces manual effort.
+- Sales organisations operate on real-time insight, not hindsight.
+
+## Troubleshooting
+
+| Issue | Resolution |
+| --- | --- |
+| Solution import fails | Confirm you selected the correct development environment, have solution import permissions, and are importing the zip file without extracting it. |
+| Agent does not appear in Copilot Studio | Confirm Copilot Studio is using the same environment where the solution was imported. Refresh the agents list after import completion. |
+| Missing connectors or actions | Recreate or rebind any environment-specific connections required by your tenant. |
+| Authentication prompts fail | Review the agent authentication settings and confirm the required identity provider configuration is available in the dev environment. |
+| Responses are not relevant | Review the imported knowledge files, topic trigger phrases, orchestration settings, and grounding data. |
+
+## Repository contents
+
+```text
+.
+|-- OpportunityAgent_1_0_0_1.zip
+|-- README.md
+`-- images/
+```
+
+## Next steps
+
+After installing the agent in a development environment, run it across a representative seller portfolio to identify high-value opportunities, accelerate pipeline progression, and improve conversion and expansion outcomes.
